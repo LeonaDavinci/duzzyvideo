@@ -1,0 +1,395 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+/* ---- stage ---- */
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stageHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.dotLive {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 10px var(--gold);
+}
+
+.viewport {
+  flex: 1;
+  min-height: 320px;
+  border-radius: 12px;
+  background: #0c0c0c;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.placeholder {
+  text-align: center;
+  color: var(--text-2);
+}
+.phIcon {
+  font-size: 40px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.placeholder p {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.placeholder span {
+  font-size: 13px;
+}
+
+.clip {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: clipIn 0.5s ease;
+}
+@keyframes clipIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.clipScene {
+  position: absolute;
+  inset: 0;
+}
+.sun {
+  position: absolute;
+  top: 22%;
+  left: 30%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.9;
+}
+.horizon {
+  position: absolute;
+  bottom: 32%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+.figure {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 70px;
+  border-radius: 16px 16px 6px 6px;
+  background: linear-gradient(90deg, #2a2a2a, #4a4636 70%, #f5c518);
+}
+.play {
+  position: relative;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--gold);
+  font-size: 20px;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.play:hover {
+  background: var(--gold);
+  color: #141400;
+}
+.clipTag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+.renderBox {
+  width: 100%;
+  text-align: center;
+  color: var(--text-2);
+  font-size: 14px;
+}
+.renderBar {
+  height: 10px;
+  border-radius: 6px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.renderFill {
+  height: 100%;
+  background: var(--gold);
+  transition: width 0.15s linear;
+}
+
+.stageFoot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+/* ---- controls ---- */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.block {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.hint {
+  font-weight: 400;
+  color: var(--text-3);
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+.textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+.shot {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 6px;
+  text-align: center;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+.shotOn {
+  opacity: 1;
+  border-color: var(--gold);
+  background: var(--gold-soft);
+}
+.shot span {
+  display: block;
+  font-size: 10px;
+  color: var(--text-2);
+  letter-spacing: 0.5px;
+}
+.shot em {
+  display: block;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 2px;
+  color: var(--text);
+}
+
+.modelRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-2);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.chip:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.chipOn {
+  background: var(--gold);
+  color: #141400;
+  border-color: var(--gold);
+}
+
+/* cube */
+.cubeWrap {
+  perspective: 600px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+.cubeWrap:active {
+  cursor: grabbing;
+}
+.cube {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt)) rotateY(var(--angle));
+}
+.face {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 2px solid var(--gold);
+  background: rgba(245, 197, 24, 0.07);
+}
+.front { transform: translateZ(55px); }
+.back { transform: rotateY(180deg) translateZ(55px); }
+.right { transform: rotateY(90deg) translateZ(55px); }
+.left { transform: rotateY(-90deg) translateZ(55px); }
+.top { transform: rotateX(90deg) translateZ(55px); }
+.bottom { transform: rotateX(-90deg) translateZ(55px); }
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.slider {
+  display: grid;
+  grid-template-columns: 48px 1fr 40px;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.slider em {
+  font-style: normal;
+  text-align: right;
+  color: var(--gold);
+  font-weight: 700;
+}
+.slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--panel-2);
+  outline: none;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+}
+.slider input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gold);
+  cursor: pointer;
+}
+
+/* lighting */
+.lightRow {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+.lightPreview {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.rimBtn {
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rimOn {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-soft);
+}
+
+.generate {
+  width: 100%;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}

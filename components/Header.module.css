@@ -1,0 +1,73 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(18, 18, 18, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.logoMark {
+  color: var(--gold);
+  font-size: 22px;
+}
+
+.logoText {
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.signin {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.signin:hover {
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .signin {
+    display: none;
+  }
+}

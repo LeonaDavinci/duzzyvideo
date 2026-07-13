@@ -1,0 +1,268 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.visual {
+  order: 0;
+}
+
+.text {
+  order: 1;
+}
+
+@media (max-width: 900px) {
+  .visual {
+    order: 1;
+  }
+  .text {
+    order: 0;
+  }
+}
+
+.board {
+  background: linear-gradient(145deg, #1a1a1a 0%, #121212 100%);
+  border: 1px solid rgba(245, 197, 24, 0.18);
+  border-radius: 24px;
+  padding: 1.5rem 1.25rem 1.5rem 1.5rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(245, 197, 24, 0.06) inset;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 360px;
+}
+
+.leftNode {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nodeTag {
+  font-size: 0.7rem;
+  color: #a3a3a3;
+  letter-spacing: 0.04em;
+}
+
+.thumb {
+  width: 140px;
+  aspect-ratio: 16/10;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #151515 100%);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbScene {
+  width: 80%;
+  height: 70%;
+  border-radius: 8px;
+  background: radial-gradient(circle at 30% 20%, #f5c51833, transparent 60%),
+    linear-gradient(135deg, #2d2d2d 0%, #161616 100%);
+  position: relative;
+}
+
+.figure {
+  position: absolute;
+  left: 18%;
+  bottom: 0;
+  width: 22%;
+  height: 55%;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(180deg, #e5e5e5 0%, #8a8a8a 100%);
+  box-shadow: 0 0 12px rgba(245, 197, 24, 0.2);
+}
+
+.ball {
+  position: absolute;
+  right: 16%;
+  bottom: 18%;
+  width: 16%;
+  height: 24%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f5c518, #b8860b 60%);
+  box-shadow: 0 0 18px rgba(245, 197, 24, 0.35);
+}
+
+.connector {
+  flex: 1 1 auto;
+  position: relative;
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connector svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.nodeDot {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f5c518;
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px rgba(245, 197, 24, 0.5);
+}
+
+.nodeDot:last-of-type {
+  left: auto;
+  right: 0;
+  top: 14%;
+  transform: none;
+}
+
+.nodeDot:nth-of-type(2) {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 14%;
+  transform: none;
+}
+
+.rightGrid {
+  flex: 1 1 240px;
+  min-width: 220px;
+}
+
+.gridHead {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.gridTag {
+  font-size: 0.7rem;
+  color: #a3a3a3;
+  letter-spacing: 0.04em;
+}
+
+.gridTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.gridBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.cell {
+  aspect-ratio: 16/10;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #222 0%, #141414 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 40%, rgba(245, 197, 24, 0.06) 50%, transparent 60%);
+  animation: sweep 2.5s linear infinite;
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cellNum {
+  font-size: 0.65rem;
+  color: #666;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.cellStatus {
+  font-size: 0.6rem;
+  color: #f5c518;
+  z-index: 1;
+}
+
+.points {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: #d4d4d4;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.check {
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: rgba(245, 197, 24, 0.15);
+  color: #f5c518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 900px) {
+  .board {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1.25rem;
+  }
+  .connector {
+    transform: rotate(90deg);
+    min-height: 60px;
+  }
+  .rightGrid {
+    width: 100%;
+  }
+  .gridBody {
+    gap: 0.375rem;
+  }
+  .cellStatus {
+    display: none;
+  }
+}

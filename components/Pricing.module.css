@@ -1,0 +1,106 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 48px;
+  align-items: start;
+}
+
+.card {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 34px 30px;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.featured {
+  border-color: var(--gold);
+  background: linear-gradient(170deg, rgba(245, 197, 24, 0.1), var(--panel) 45%);
+  box-shadow: 0 14px 40px rgba(245, 197, 24, 0.12);
+}
+
+.tag {
+  position: absolute;
+  top: -12px;
+  left: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #1a1400;
+  background: var(--gold);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.name {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 16px 0 6px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.featured .price {
+  color: var(--gold);
+}
+
+.unit {
+  color: var(--text-2);
+  font-size: 15px;
+}
+
+.desc {
+  color: var(--text-2);
+  font-size: 14px;
+  min-height: 42px;
+}
+
+.cta {
+  width: 100%;
+  margin: 20px 0 24px;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.check {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
