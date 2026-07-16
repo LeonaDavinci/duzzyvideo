@@ -15,6 +15,8 @@ export default function Header() {
           <a href="#canvas">Director Canvas</a>
           <a href="#showcase">Showcase</a>
           <a href="#tools">Creative Tools</a>
+          <a href="/skills">Skills</a>
+          <a href="/blog">Blog</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
         </nav>
