@@ -137,7 +137,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Can I use it without any filmmaking background?",
-    a: "Yes. BuzzyAI Video acts as your AI director. With storyboard generation, visual camera control, and real-time lighting, anyone can produce cinematic shorts.",
+    a: "Yes. Buzzy AI Video acts as your AI director. With storyboard generation, visual camera control, and real-time lighting, anyone can produce cinematic shorts.",
   },
   {
     q: "Do you support text-to-video and image-to-video?",
@@ -220,7 +220,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "BuzzyAI Video replaced three tools in my pipeline. The storyboard + camera control finally let me direct instead of just prompting.",
+      "Buzzy AI Video replaced three tools in my pipeline. The storyboard + camera control finally let me direct instead of just prompting.",
     name: "Maya R.",
     role: "Independent Filmmaker",
   },

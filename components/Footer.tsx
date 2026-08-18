@@ -43,7 +43,7 @@ export default function Footer() {
       <div className={`container ${styles.top}`}>
         <div className={styles.brand}>
           <a href="#top" className={styles.logo}>
-            <span className="gold">◐</span> BuzzyAI{" "}
+            <span className="gold">◐</span> Buzzy AI{" "}
             <span className="gold">Video</span>
           </a>
           <p className={styles.tagline}>
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
       <div className="divider" />
       <div className={`container ${styles.bottom}`}>
-        <span>© 2026 BuzzyAI Video. All rights reserved.</span>
+        <span>© 2026 Buzzy AI Video. All rights reserved.</span>
         <span>Pro Video Engine for Everyone</span>
       </div>
     </footer>

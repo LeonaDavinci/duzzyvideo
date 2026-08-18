@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import styles from "./skills.module.css";
 
 export const metadata: Metadata = {
-  title: "Skills & Techniques - BuzzyAI Video | Master AI Video Directing",
+  title: "Skills & Techniques - Buzzy AI Video | Master AI Video Directing",
   description:
-    "Learn pro techniques for BuzzyAI Video: prompt engineering for cinematic shots, storyboard consistency, multi-camera control, real-time relighting, model selection tips and a full directing workflow.",
+    "Learn pro techniques for Buzzy AI Video: prompt engineering for cinematic shots, storyboard consistency, multi-camera control, real-time relighting, model selection tips and a full directing workflow.",
   keywords: [
     "AI video tips",
     "AI video techniques",
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     "storyboard consistency",
     "AI directing skills",
     "cinematic AI prompts",
-    "BuzzyAI Video guide",
+    "Buzzy AI Video guide",
   ],
   openGraph: {
-    title: "Skills & Techniques - BuzzyAI Video",
+    title: "Skills & Techniques - Buzzy AI Video",
     description:
       "Master AI video directing with practical techniques for prompts, storyboards, camera control and lighting.",
     type: "website",
@@ -189,7 +189,7 @@ export default function SkillsPage() {
             </h1>
             <p className={styles.sub}>
               Practical techniques for getting cinematic, consistent results
-              from BuzzyAI Video. From prompt engineering to multi-camera
+              from Buzzy AI Video. From prompt engineering to multi-camera
               workflows, this is everything we have learned from directing
               thousands of AI clips.
             </p>
@@ -254,7 +254,7 @@ export default function SkillsPage() {
               From idea to <span className="gold">4K clip</span> in 4 steps
             </h2>
             <p className="section-sub">
-              The recommended directing workflow inside BuzzyAI Video. Follow
+              The recommended directing workflow inside Buzzy AI Video. Follow
               this order for the best balance of speed and quality.
             </p>
             <div className={styles.steps}>

@@ -4,9 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://buzzyai.video"),
   title:
-    "BuzzyAI Video - Your AI Director | Pro Video Engine for Everyone",
+    "Buzzy AI Video - Your AI Director | Pro Video Engine for Everyone",
   description:
-    "BuzzyAI Video aggregates Seedance, Kling, Runway, Veo and more into one pro engine, with storyboard, multi-angle camera control and real-time relighting so anyone can direct 4K cinematic shorts, animations and music videos.",
+    "Buzzy AI Video aggregates Seedance, Kling, Runway, Veo and more into one pro engine, with storyboard, multi-angle camera control and real-time relighting so anyone can direct 4K cinematic shorts, animations and music videos.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "AI animation",
     "AI music video",
   ],
-  authors: [{ name: "BuzzyAI Video" }],
+  authors: [{ name: "Buzzy AI Video" }],
   openGraph: {
-    title: "BuzzyAI Video - Your AI Director",
+    title: "Buzzy AI Video - Your AI Director",
     description:
       "Multi-model aggregation plus cinematic creative tools. Direct 4K AI videos in your browser.",
     type: "website",

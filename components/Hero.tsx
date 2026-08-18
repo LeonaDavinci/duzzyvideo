@@ -12,7 +12,7 @@ export default function Hero() {
           that stays consistent
         </h1>
         <p className={styles.sub}>
-          BuzzyAI Video is the simplest ComfyUI-style canvas for directors: drop
+          Buzzy AI Video is the simplest ComfyUI-style canvas for directors: drop
           an image, generate a multi-cam storyboard, and render consistent clips
           where characters, objects, and locations stay locked across every shot.
         </p>

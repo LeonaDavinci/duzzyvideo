@@ -1,5 +1,5 @@
 """
-Generate the BuzzyAI Video "Director Canvas" demo GIF.
+Generate the Buzzy AI Video "Director Canvas" demo GIF.
 
 Renders stylized frames of the canvas UI showing the core feature flow:
 storyboard -> multi-angle camera -> real-time lighting -> render -> clip preview.
@@ -50,7 +50,7 @@ def bar(d):
     # top app bar
     d.rectangle([0, 0, W, 34], fill=PANEL2)
     d.line([0, 34, W, 34], fill=BORDER, width=1)
-    d.text((14, 9), "BuzzyAI Video  —  Director Canvas", font=font(14), fill=GOLD)
+    d.text((14, 9), "Buzzy AI Video  —  Director Canvas", font=font(14), fill=GOLD)
     # live pill
     d.rounded_rectangle([W - 78, 9, W - 14, 25], radius=8, outline=BORDER, width=1)
     d.ellipse([W - 70, 14, W - 64, 20], fill=GOLD)

@@ -5,9 +5,9 @@ import DirectorCanvasApp from "@/components/DirectorCanvasApp";
 import styles from "./director.module.css";
 
 export const metadata: Metadata = {
-  title: "Director Canvas - BuzzyAI Video | Direct animation & generate video",
+  title: "Director Canvas - Buzzy AI Video | Direct animation & generate video",
   description:
-    "The BuzzyAI Video Director Canvas is a browser-based Web UI to direct animation: write a script, build a storyboard, control camera and lighting, and generate 4K video with any leading model.",
+    "The Buzzy AI Video Director Canvas is a browser-based Web UI to direct animation: write a script, build a storyboard, control camera and lighting, and generate 4K video with any leading model.",
 };
 
 const features = [
@@ -53,7 +53,7 @@ export default function DirectorPage() {
             </a>
             <img
               src="/director-canvas.gif"
-              alt="BuzzyAI Video Director Canvas demo"
+              alt="Buzzy AI Video Director Canvas demo"
               className={styles.heroGif}
             />
           </div>

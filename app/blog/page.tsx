@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import styles from "./blog.module.css";
 
 export const metadata: Metadata = {
-  title: "Blog - BuzzyAI Video | AI Video Generation Insights & Tutorials",
+  title: "Blog - Buzzy AI Video | AI Video Generation Insights & Tutorials",
   description:
-    "Deep dives into AI video generation: model comparisons, prompt engineering, cinematic directing techniques, and the latest updates from BuzzyAI Video. Updated July 2026.",
+    "Deep dives into AI video generation: model comparisons, prompt engineering, cinematic directing techniques, and the latest updates from Buzzy AI Video. Updated July 2026.",
   keywords: [
     "AI video blog",
     "AI video generation tutorial",
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "cinematic AI video",
     "Seedance vs Kling vs Veo",
     "AI video news 2026",
-    "BuzzyAI Video blog",
+    "Buzzy AI Video blog",
   ],
   openGraph: {
-    title: "BuzzyAI Video Blog - AI Video Insights & Tutorials",
+    title: "Buzzy AI Video Blog - AI Video Insights & Tutorials",
     description:
       "Learn how to direct cinematic AI videos with practical guides, model comparisons and prompt techniques.",
     type: "website",
@@ -50,7 +50,7 @@ const articles = [
         <p>
           The question is no longer <strong>"can AI make video?"</strong> - it
           is <strong>"how do I direct AI to make the video I want?"</strong>{" "}
-          That shift from generation to direction is exactly what BuzzyAI Video
+          That shift from generation to direction is exactly what Buzzy AI Video
           was built to solve.
         </p>
 
@@ -98,7 +98,7 @@ const articles = [
           losing your creative flow.
         </p>
         <p>
-          BuzzyAI Video aggregates all four model families into one canvas. You
+          Buzzy AI Video aggregates all four model families into one canvas. You
           write your storyboard once, set camera and lighting once, then render
           each shot with whichever model fits best. This is the same workflow a
           real post-production house uses - just without the render farm.
@@ -135,7 +135,7 @@ const articles = [
         </h3>
         <p>
           If you have been waiting for AI video to be "good enough" for real
-          projects, that moment has arrived. A solo creator with BuzzyAI Video
+          projects, that moment has arrived. A solo creator with Buzzy AI Video
           can now produce a 90-second cinematic short - storyboarded, directed,
           and rendered in 4K - in an afternoon. No camera. No crew. No render
           farm. Just a browser and an idea.
@@ -167,7 +167,7 @@ export default function BlogPage() {
             <p className={styles.sub}>
               Deep dives into AI video generation: model comparisons, prompt
               engineering, cinematic directing techniques, and the latest
-              product updates from BuzzyAI Video.
+              product updates from Buzzy AI Video.
             </p>
             <span className={styles.updatedDate}>
               Last updated: July 16, 2026 - 17:13 GMT+8
@@ -184,7 +184,7 @@ export default function BlogPage() {
             </h2>
             <p className="section-sub">
               Practical, no-fluff articles about directing AI video. Written by
-              the team that builds BuzzyAI Video.
+              the team that builds Buzzy AI Video.
             </p>
             <div className={styles.articleList}>
               {articles.map((article) => (
@@ -201,7 +201,7 @@ export default function BlogPage() {
                       <div className={styles.authorAvatar}>B</div>
                       <div>
                         <div className={styles.authorName}>
-                          BuzzyAI Video Team
+                          Buzzy AI Video Team
                         </div>
                         <div className={styles.authorRole}>
                           Editorial & Product
