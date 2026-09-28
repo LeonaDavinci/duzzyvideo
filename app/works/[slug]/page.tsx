@@ -1,0 +1,132 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { videoWorks, VideoWork } from "@/lib/data";
+import styles from "./work.module.css";
+
+export function generateStaticParams() {
+  return videoWorks.map((w) => ({ slug: w.slug }));
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const w = videoWorks.find((x) => x.slug === params.slug);
+  if (!w) return { title: "Work not found · Buzzy AI Video" };
+  return {
+    title: `${w.title} — ${w.author} · Buzzy AI Video`,
+    description: w.description,
+    openGraph: {
+      title: `${w.title} — ${w.author}`,
+      description: w.description,
+      images: [w.image],
+      type: "video.other",
+    },
+  };
+}
+
+export default function WorkPage({ params }: { params: { slug: string } }) {
+  const work: VideoWork | undefined = videoWorks.find(
+    (x) => x.slug === params.slug
+  );
+  if (!work) notFound();
+
+  const related = videoWorks.filter((x) => x.slug !== work.slug).slice(0, 3);
+
+  return (
+    <main className={styles.page}>
+      <div className="container">
+        <Link href="/#works" className={styles.back}>
+          ← Back to works
+        </Link>
+
+        <div className={styles.hero}>
+          <div className={styles.poster}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={work.image}
+              alt={`${work.title} — ${work.tag} screenshot`}
+              className={styles.posterImg}
+            />
+            <button
+              type="button"
+              className={styles.playBtn}
+              aria-label={`Play ${work.title}`}
+              title="Preview clip coming soon"
+            >
+              ▶
+            </button>
+          </div>
+
+          <div className={styles.info}>
+            <span className={styles.tag}>{work.tag}</span>
+            <h1 className={styles.title}>{work.title}</h1>
+            <p className={styles.author}>Directed by {work.author}</p>
+
+            <ul className={styles.stats}>
+              <li>
+                <span className={styles.statLabel}>Length</span>
+                <span className={styles.statValue}>{work.duration}</span>
+              </li>
+              <li>
+                <span className={styles.statLabel}>Model</span>
+                <span className={styles.statValue}>{work.model}</span>
+              </li>
+              <li>
+                <span className={styles.statLabel}>Released</span>
+                <span className={styles.statValue}>{work.createdAt}</span>
+              </li>
+              <li>
+                <span className={styles.statLabel}>Views</span>
+                <span className={styles.statValue}>{work.views}</span>
+              </li>
+            </ul>
+
+            <a href="/director" className="btn btn-primary">
+              Make your own
+            </a>
+          </div>
+        </div>
+
+        <section className={styles.body}>
+          <div className={styles.block}>
+            <h2 className={styles.h2}>About this work</h2>
+            <p className={styles.desc}>{work.description}</p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.h2}>Prompt used</h2>
+            <pre className={styles.prompt}>{work.prompt}</pre>
+          </div>
+        </section>
+
+        <section className={styles.related}>
+          <h2 className={styles.h2}>More works</h2>
+          <div className={styles.relatedGrid}>
+            {related.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/works/${r.slug}`}
+                className={styles.relCard}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={r.image}
+                  alt={`${r.title} screenshot`}
+                  className={styles.relImg}
+                  loading="lazy"
+                />
+                <div className={styles.relMeta}>
+                  <span className={styles.relTitle}>{r.title}</span>
+                  <span className={styles.relAuthor}>by {r.author}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}

@@ -1,8 +1,16 @@
 import type { MetadataRoute } from "next";
+import { videoWorks } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://buzzyai.video";
   const now = new Date();
+
+  const workEntries: MetadataRoute.Sitemap = videoWorks.map((w) => ({
+    url: `${base}/works/${w.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
 
   return [
     {
@@ -11,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1.0,
     },
+    ...workEntries,
     {
       url: `${base}/director`,
       lastModified: now,
