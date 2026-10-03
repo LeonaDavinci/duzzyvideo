@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   description:
     "Deep dives into AI video generation: model comparisons, prompt engineering, cinematic directing techniques, and the latest updates from Buzzy AI Video. Updated July 2026.",
   keywords: [
+    "buzzy",
+    "buzzy AI video",
+    "buzzy blog",
     "AI video blog",
     "AI video generation tutorial",
     "text to video guide",

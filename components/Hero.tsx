@@ -12,9 +12,10 @@ export default function Hero() {
           that stays consistent
         </h1>
         <p className={styles.sub}>
-          Buzzy AI Video is the simplest ComfyUI-style canvas for directors: drop
-          an image, generate a multi-cam storyboard, and render consistent clips
-          where characters, objects, and locations stay locked across every shot.
+          Buzzy is the simplest ComfyUI-style canvas for directors: drop an
+          image, generate a multi-cam storyboard, and render consistent clips
+          where characters, objects, and locations stay locked across every
+          shot.
         </p>
         <div className={styles.cta}>
           <a href="/director" className="btn btn-primary">

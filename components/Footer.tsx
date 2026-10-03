@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
       <div className="divider" />
       <div className={`container ${styles.bottom}`}>
-        <span>© 2026 Buzzy AI Video. All rights reserved.</span>
+        <span>© 2026 Buzzy. All rights reserved.</span>
         <span>Pro Video Engine for Everyone</span>
       </div>
     </footer>

@@ -6,8 +6,11 @@ import styles from "./skills.module.css";
 export const metadata: Metadata = {
   title: "Skills & Techniques - Buzzy AI Video | Master AI Video Directing",
   description:
-    "Learn pro techniques for Buzzy AI Video: prompt engineering for cinematic shots, storyboard consistency, multi-camera control, real-time relighting, model selection tips and a full directing workflow.",
+    "Buzzy is where you learn pro AI video techniques: prompt engineering for cinematic shots, storyboard consistency, multi-camera control, real-time relighting, model selection tips and a full directing workflow.",
   keywords: [
+    "buzzy",
+    "buzzy AI video",
+    "buzzy AI",
     "AI video tips",
     "AI video techniques",
     "prompt engineering video",

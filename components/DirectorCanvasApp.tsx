@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { models } from "@/lib/data";
+import PricingJump from "./PricingJump";
 import styles from "./DirectorCanvasApp.module.css";
 
 type Status = "idle" | "storyboard" | "rendering" | "done";
@@ -232,9 +233,9 @@ export default function DirectorCanvasApp() {
           </div>
         </div>
 
-        <button className={`btn btn-primary ${styles.generate}`} onClick={generate}>
+        <PricingJump className={`btn btn-primary ${styles.generate}`}>
           {status === "done" ? "Generate again" : "Generate video"}
-        </button>
+        </PricingJump>
       </div>
     </div>
   );

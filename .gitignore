@@ -34,3 +34,6 @@ __pycache__/
 # Temp
 tmp/
 temp/
+
+# TypeScript build info
+tsconfig.tsbuildinfo

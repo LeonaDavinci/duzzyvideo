@@ -1,4 +1,4 @@
-import PricingJump from "./PricingJump";
+import Link from "next/link";
 import styles from "./DirectorCanvas.module.css";
 
 const points = [
@@ -31,7 +31,9 @@ export default function DirectorCanvas() {
                 </li>
               ))}
             </ul>
-            <PricingJump>Open the Director Canvas</PricingJump>
+            <Link href="/director" className="btn btn-primary">
+              Open the Director Canvas
+            </Link>
           </div>
           <div className={styles.visual}>
             <img
