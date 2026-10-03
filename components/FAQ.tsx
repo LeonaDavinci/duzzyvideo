@@ -3,7 +3,7 @@ import styles from "./FAQ.module.css";
 
 export default function FAQ() {
   return (
-    <section className="section" id="faq">
+    <section className="section tight" id="faq">
       <div className="container">
         <span className="eyebrow">FAQ</span>
         <h2 className="section-title">Frequently asked questions</h2>

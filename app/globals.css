@@ -59,6 +59,11 @@ video {
   padding: 64px 0;
 }
 
+/* Denser outer rhythm for short sections that don't need breathing room. */
+.section.tight {
+  padding: 38px 0;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -159,5 +164,9 @@ video {
 @media (max-width: 768px) {
   .section {
     padding: 44px 0;
+  }
+
+  .section.tight {
+    padding: 26px 0;
   }
 }

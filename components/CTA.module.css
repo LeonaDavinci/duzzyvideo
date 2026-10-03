@@ -1,22 +1,22 @@
 .box {
   position: relative;
   overflow: hidden;
-  border-radius: 22px;
+  border-radius: 15px;
   border: 1px solid var(--border-gold);
   background: linear-gradient(160deg, #1e1b10, #141414 60%);
-  padding: 72px 40px;
+  padding: 30px 22px 34px;
   text-align: center;
 }
 
 .glow {
   position: absolute;
-  top: -120px;
+  top: -70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 300px;
+  width: 520px;
+  height: 180px;
   background: radial-gradient(closest-side, rgba(245, 197, 24, 0.22), transparent);
-  filter: blur(30px);
+  filter: blur(26px);
 }
 
 .content {
@@ -24,14 +24,14 @@
 }
 
 .title {
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: clamp(23px, 3vw, 31px);
   font-weight: 900;
   letter-spacing: -0.5px;
 }
 
 .sub {
   color: var(--text-2);
-  font-size: 17px;
+  font-size: 15px;
   max-width: 520px;
-  margin: 16px auto 32px;
+  margin: 10px auto 20px;
 }

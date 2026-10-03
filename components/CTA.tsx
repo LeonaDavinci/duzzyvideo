@@ -3,7 +3,7 @@ import styles from "./CTA.module.css";
 
 export default function CTA() {
   return (
-    <section className="section">
+    <section className="section tight">
       <div className="container">
         <div className={`${styles.box} film-grain`}>
           <div className={styles.glow} />

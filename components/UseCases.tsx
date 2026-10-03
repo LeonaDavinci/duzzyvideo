@@ -3,7 +3,11 @@ import styles from "./UseCases.module.css";
 
 export default function UseCases() {
   return (
-    <section className="section" id="use-cases" style={{ background: "var(--bg-elev)" }}>
+    <section
+      className="section tight"
+      id="use-cases"
+      style={{ background: "var(--bg-elev)" }}
+    >
       <div className="container">
         <span className="eyebrow">Use cases</span>
         <h2 className="section-title">
