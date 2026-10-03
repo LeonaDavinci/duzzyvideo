@@ -12,7 +12,7 @@ export default function Header() {
         </a>
         <nav className={styles.nav}>
           <a href="/#models">Models</a>
-          <a href="/#canvas">Director Canvas</a>
+          <a href="/director">Director Canvas</a>
           <a href="/#showcase">Showcase</a>
           <a href="/#works">Works</a>
           <a href="/#tools">Creative Tools</a>
