@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // Every subpage title picks up the standalone brand token "buzzy".
   title: {
     default:
-      "Buzzy AI Video - Your AI Director | buzzy AI video generator",
+      "Buzzy AI Video - Your AI Director | buzzy : AI video generator pro",
     template: "%s | buzzy",
   },
   description:
