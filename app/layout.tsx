@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   applicationName: "buzzy",
   // Every subpage title picks up the standalone brand token "buzzy".
   title: {
-    default:
-      "Buzzy AI Video - Your AI Director | buzzy : AI video generator pro",
+    default: "Buzzy AI Video - Director | Buzzy : Your  Pro Video Engine ",
     template: "%s | buzzy",
   },
   description:
