@@ -1,8 +1,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 48px;
+  gap: 16px;
+  margin-top: 28px;
   align-items: start;
 }
 
@@ -10,8 +10,8 @@
   position: relative;
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 34px 30px;
+  border-radius: 13px;
+  padding: 22px 22px 24px;
   transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
@@ -27,19 +27,19 @@
 
 .tag {
   position: absolute;
-  top: -12px;
-  left: 30px;
-  font-size: 12px;
+  top: -10px;
+  left: 22px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
   color: #1a1400;
   background: var(--gold);
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
 }
 
 .name {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -47,11 +47,11 @@
   display: flex;
   align-items: baseline;
   gap: 6px;
-  margin: 16px 0 6px;
+  margin: 10px 0 4px;
 }
 
 .price {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
   color: var(--text);
 }
@@ -67,27 +67,27 @@
 
 .desc {
   color: var(--text-2);
-  font-size: 14px;
-  min-height: 42px;
+  font-size: 13px;
+  min-height: 34px;
 }
 
 .cta {
   width: 100%;
-  margin: 20px 0 24px;
+  margin: 14px 0 16px;
 }
 
 .features {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 7px;
 }
 
 .features li {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
+  gap: 8px;
+  font-size: 13px;
   color: var(--text);
 }
 

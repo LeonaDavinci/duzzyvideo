@@ -1,8 +1,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 48px;
+  gap: 12px;
+  margin-top: 28px;
 }
 
 .card {
@@ -10,7 +10,7 @@
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px 22px;
+  padding: 16px 16px 18px;
   transition: transform 0.18s ease, border-color 0.18s ease,
     background 0.18s ease;
   overflow: hidden;
@@ -29,35 +29,35 @@
 
 .badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  font-size: 11px;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 1px;
   color: #1a1400;
   background: var(--gold);
-  padding: 3px 9px;
+  padding: 2px 8px;
   border-radius: 20px;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--gold);
   box-shadow: 0 0 12px var(--gold);
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .name {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .desc {
   color: var(--text-2);
-  font-size: 14px;
-  margin-top: 8px;
+  font-size: 13px;
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {

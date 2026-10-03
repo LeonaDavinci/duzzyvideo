@@ -4,11 +4,9 @@ import StoryboardCreator from "@/components/StoryboardCreator";
 import ModelGrid from "@/components/ModelGrid";
 import DirectorCanvas from "@/components/DirectorCanvas";
 import Showcase from "@/components/Showcase";
-import VideoWorks from "@/components/VideoWorks";
 import CreativeTools from "@/components/CreativeTools";
 import UseCases from "@/components/UseCases";
 import Workflow from "@/components/Workflow";
-import Partners from "@/components/Partners";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -28,11 +26,9 @@ export default function Home() {
         <ModelGrid />
         <DirectorCanvas />
         <Showcase />
-        <VideoWorks />
         <CreativeTools />
         <UseCases />
         <Workflow />
-        <Partners />
         <Pricing />
         <Testimonials />
         <FAQ />
