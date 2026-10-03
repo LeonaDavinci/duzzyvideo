@@ -24,6 +24,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keep /#anchor targets clear of the 68px sticky header. */
+  scroll-padding-top: 88px;
 }
 
 body {

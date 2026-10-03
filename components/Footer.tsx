@@ -11,16 +11,16 @@ const cols: FooterCol[] = [
       { label: "Director Canvas", href: "/director" },
       { label: "Creative Tools", href: "/#tools" },
       { label: "Pricing", href: "/#pricing" },
-      { label: "Changelog", href: "#" },
+      { label: "Changelog", href: "/" },
     ],
   },
   {
     title: "Resources",
     links: [
       { label: "Skills", href: "/skills" },
-      { label: "Tutorials", href: "#" },
-      { label: "Community", href: "#" },
-      { label: "Developer API", href: "#" },
+      { label: "Tutorials", href: "/" },
+      { label: "Community", href: "/" },
+      { label: "Developer API", href: "/" },
       { label: "FAQ", href: "/#faq" },
       { label: "Blog", href: "/blog" },
     ],
@@ -28,11 +28,11 @@ const cols: FooterCol[] = [
   {
     title: "Company",
     links: [
-      { label: "About", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Contact", href: "#" },
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
+      { label: "About", href: "/" },
+      { label: "Careers", href: "/" },
+      { label: "Contact", href: "/" },
+      { label: "Privacy", href: "/" },
+      { label: "Terms", href: "/" },
     ],
   },
 ];
