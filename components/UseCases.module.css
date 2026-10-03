@@ -1,48 +1,70 @@
+/* Local overrides so this section reads tighter than the global defaults. */
+.head :global(.eyebrow) {
+  margin-bottom: 6px;
+}
+
+.head :global(.section-title) {
+  font-size: clamp(20px, 2.4vw, 26px);
+}
+
+.head :global(.section-sub) {
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 540px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 26px;
+  gap: 8px;
+  margin-top: 14px;
 }
 
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 16px 20px;
+  border-radius: 10px;
+  padding: 11px 11px 13px;
   transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   border-color: var(--gold);
 }
 
 .icon {
-  font-size: 21px;
+  font-size: 15px;
+  line-height: 1;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .desc {
   color: var(--text-2);
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 3px;
 }
 
 @media (max-width: 820px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
   }
 }
 
 @media (max-width: 520px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 10px 11px 12px;
   }
 }
