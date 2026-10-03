@@ -7,10 +7,10 @@ const cols: FooterCol[] = [
   {
     title: "Product",
     links: [
-      { label: "Models", href: "#models" },
+      { label: "Models", href: "/#models" },
       { label: "Director Canvas", href: "/director" },
-      { label: "Creative Tools", href: "#tools" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "Creative Tools", href: "/#tools" },
+      { label: "Pricing", href: "/#pricing" },
       { label: "Changelog", href: "#" },
     ],
   },
@@ -21,7 +21,7 @@ const cols: FooterCol[] = [
       { label: "Tutorials", href: "#" },
       { label: "Community", href: "#" },
       { label: "Developer API", href: "#" },
-      { label: "FAQ", href: "#faq" },
+      { label: "FAQ", href: "/#faq" },
       { label: "Blog", href: "/blog" },
     ],
   },
@@ -42,7 +42,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.top}`}>
         <div className={styles.brand}>
-          <a href="#top" className={styles.logo}>
+          <a href="/" className={styles.logo}>
             <span className="gold">◐</span> Buzzy AI{" "}
             <span className="gold">Video</span>
           </a>

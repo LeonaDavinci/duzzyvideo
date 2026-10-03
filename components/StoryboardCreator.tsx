@@ -1,6 +1,22 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./StoryboardCreator.module.css";
 
+const GENERATE_MS = 2600;
+const PLAY_MS = 3000;
+
 export default function StoryboardCreator() {
+  const [phase, setPhase] = useState<"generating" | "playing">("generating");
+
+  useEffect(() => {
+    const t = setTimeout(
+      () => setPhase((p) => (p === "generating" ? "playing" : "generating")),
+      phase === "generating" ? GENERATE_MS : PLAY_MS
+    );
+    return () => clearTimeout(t);
+  }, [phase]);
+
   return (
     <section className="section" id="storyboard">
       <div className="container">
@@ -43,16 +59,31 @@ export default function StoryboardCreator() {
               <div className={styles.rightGrid}>
                 <div className={styles.gridHead}>
                   <span className={styles.gridTag}>Video Clips</span>
-                  <span className={styles.gridTitle}>3×3 Grid Multi-cam View</span>
+                  <span className={styles.gridTitle}>
+                    {phase === "playing"
+                      ? "AI clip · 3s cinematic preview"
+                      : "3×3 Grid Multi-cam View"}
+                  </span>
                 </div>
-                <div className={styles.gridBody}>
-                  {Array.from({ length: 9 }).map((_, i) => (
-                    <div key={i} className={styles.cell}>
-                      <span className={styles.cellNum}>0{i + 1}</span>
-                      <span className={styles.cellStatus}>Generating…</span>
-                    </div>
-                  ))}
-                </div>
+                {phase === "playing" ? (
+                  <video
+                    className={styles.clip}
+                    src="/media/ai-clip.mp4"
+                    autoPlay
+                    muted
+                    playsInline
+                    preload="auto"
+                  />
+                ) : (
+                  <div className={styles.gridBody}>
+                    {Array.from({ length: 9 }).map((_, i) => (
+                      <div key={i} className={styles.cell}>
+                        <span className={styles.cellNum}>0{i + 1}</span>
+                        <span className={styles.cellStatus}>Generating…</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>

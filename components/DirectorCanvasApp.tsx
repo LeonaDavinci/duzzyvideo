@@ -15,7 +15,7 @@ export default function DirectorCanvasApp() {
   const [status, setStatus] = useState<Status>("idle");
   const [board, setBoard] = useState<string[]>([]);
   const [progress, setProgress] = useState(0);
-  const [model, setModel] = useState("Seedance 2.0");
+  const [model, setModel] = useState("Seedance 2.5");
 
   // camera
   const [angle, setAngle] = useState(-22);

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PricingJump from "@/components/PricingJump";
 import DirectorCanvasApp from "@/components/DirectorCanvasApp";
 import styles from "./director.module.css";
 
@@ -101,9 +102,7 @@ export default function DirectorPage() {
                 Ready to roll <span className="gold">camera?</span>
               </h2>
               <p>Open the canvas and direct your first animated clip free.</p>
-              <a href="#canvas" className="btn btn-primary">
-                Open Director Canvas
-              </a>
+              <PricingJump>Open Director Canvas</PricingJump>
             </div>
           </div>
         </section>

@@ -6,7 +6,7 @@ export interface ModelItem {
 
 export const models: ModelItem[] = [
   { name: "2.5 Model", desc: "4K · 30s clips · 50 assets", featured: true },
-  { name: "Seedance 2.0", desc: "Motion-driven video creation" },
+  { name: "Seedance 2.5", desc: "Motion-driven video creation" },
   { name: "Google Omni", desc: "Cinematic video generation" },
   { name: "Kling", desc: "High-fidelity physics simulation" },
   { name: "Runway", desc: "Next-gen creative video tools" },
@@ -262,7 +262,7 @@ export const videoWorks: VideoWork[] = [
     tag: "AI Film",
     image: "/works/backroom.png",
     duration: "1:48",
-    model: "Seedance 2.0",
+    model: "Seedance 2.5",
     createdAt: "2026-08",
     views: "24.6K",
     description:
@@ -337,7 +337,7 @@ export const videoWorks: VideoWork[] = [
     tag: "MV",
     image: "/works/beatmaster.png",
     duration: "3:24",
-    model: "Seedance 2.0",
+    model: "Seedance 2.5",
     createdAt: "2026-09",
     views: "58.1K",
     description:

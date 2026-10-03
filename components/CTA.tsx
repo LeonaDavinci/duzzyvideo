@@ -1,3 +1,4 @@
+import PricingJump from "./PricingJump";
 import styles from "./CTA.module.css";
 
 export default function CTA() {
@@ -14,9 +15,7 @@ export default function CTA() {
               No download, no filmmaking degree. Open your browser and roll
               camera on your first AI short.
             </p>
-            <a href="/director" className="btn btn-primary">
-              Start creating free
-            </a>
+            <PricingJump>Start creating free</PricingJump>
           </div>
         </div>
       </div>
