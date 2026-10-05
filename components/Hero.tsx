@@ -7,7 +7,8 @@ export default function Hero() {
       <div className={`container ${styles.inner}`}>
         <span className="eyebrow">Creative Agent for storytelling</span>
         <h1 className={styles.title}>
-          Buzzy : Direct with a <span className="gold">storyboard</span>
+          <span className="gold">Buzzy :</span> Direct with a{" "}
+          <span className={styles.goldSoft}>storyboard</span>
           <br />
           that stays consistent
         </h1>
