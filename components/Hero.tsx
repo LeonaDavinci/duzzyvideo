@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={`container ${styles.inner}`}>
         <span className="eyebrow">Creative Agent for storytelling</span>
         <h1 className={styles.title}>
-          Direct with a <span className="gold">storyboard</span>
+          Buzzy : Direct with a <span className="gold">storyboard</span>
           <br />
           that stays consistent
         </h1>
